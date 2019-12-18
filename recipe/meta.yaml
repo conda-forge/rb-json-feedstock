@@ -12,7 +12,8 @@ source:
 build:
   number: 0
   script:
-    - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem
+    - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem --
+        --use-system-libraries
     {% for dir in [ '', 'ext/generator', 'ext/parser' ] %}
     - make -C {{ PREFIX }}/lib/ruby/gems/{{ ruby }}.0/gems/{{ name }}-{{ version }}/ext/{{ name }}/{{ dir }} clean
     {% endfor%}
@@ -22,9 +23,9 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - ruby >=1.9
+    - ruby
   run:
-    - ruby >=1.9
+    - ruby
 
 test:
   commands:
