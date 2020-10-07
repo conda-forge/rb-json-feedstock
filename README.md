@@ -5,11 +5,13 @@ Home: https://rubygems.org/gems/json
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rb-json-feedstock/blob/master/LICENSE.txt)
 
 Summary: This is a JSON implementation as a Ruby extension in C.
 
+Development: http://flori.github.io/json/
 
+Documentation: https://www.rubydoc.info/gems/json
 
 Current build status
 ====================
@@ -29,49 +31,37 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_ruby2.5</td>
+              <td>linux_64_ruby2.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7759&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rb-json-feedstock?branchName=master&jobName=linux&configuration=linux_ruby2.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rb-json-feedstock?branchName=master&jobName=linux&configuration=linux_64_ruby2.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ruby2.6</td>
+              <td>linux_64_ruby2.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7759&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rb-json-feedstock?branchName=master&jobName=linux&configuration=linux_ruby2.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rb-json-feedstock?branchName=master&jobName=linux&configuration=linux_64_ruby2.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_ruby2.5</td>
+              <td>osx_64_ruby2.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7759&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rb-json-feedstock?branchName=master&jobName=osx&configuration=osx_ruby2.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rb-json-feedstock?branchName=master&jobName=osx&configuration=osx_64_ruby2.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_ruby2.6</td>
+              <td>osx_64_ruby2.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7759&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rb-json-feedstock?branchName=master&jobName=osx&configuration=osx_ruby2.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rb-json-feedstock?branchName=master&jobName=osx&configuration=osx_64_ruby2.6" alt="variant">
                 </a>
               </td>
             </tr>
           </tbody>
         </table>
       </details>
-    </td>
-  </tr>
-  <tr>
-    <td>Windows</td>
-    <td>
-      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
-    </td>
-  </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
     </td>
   </tr>
 </table>
