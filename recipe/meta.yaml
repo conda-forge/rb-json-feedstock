@@ -1,5 +1,5 @@
 {% set name = "json" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,13 +7,12 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: b61691fd2087ac37141b75ff4287ce2c3f17251c713e97ef73b43b4bb2e0355b
+  sha256: 601ca653b508882b402c06d2ad47269457b3acea26a6108c6fbe7161cdb454f2
 
 build:
   number: 0
   script:
-    - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem --
-        --use-system-libraries  # [osx and rb25]
+    - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem -- --use-system-libraries # [osx and rb25]
     {% for dir in [ '', 'ext/generator', 'ext/parser' ] %}
     - make -C {{ PREFIX }}/lib/ruby/gems/{{ ruby }}.0/gems/{{ name }}-{{ version }}/ext/{{ name }}/{{ dir }} clean
     {% endfor%}
