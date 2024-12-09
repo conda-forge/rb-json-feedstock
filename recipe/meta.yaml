@@ -10,7 +10,7 @@ source:
   sha256: b61691fd2087ac37141b75ff4287ce2c3f17251c713e97ef73b43b4bb2e0355b
 
 build:
-  number: 0
+  number: 1
   script:
     - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem --
         --use-system-libraries  # [osx and rb25]
@@ -42,6 +42,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - oblute
     - benhuff
     - sodre
